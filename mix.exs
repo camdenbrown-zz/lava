@@ -60,7 +60,8 @@ defmodule Lava.Mixfile do
   def deps(target) do
     [
       {:bootloader, "~> 0.1"},
-      {:nerves_runtime, "~> 0.4"}
+      {:nerves_runtime, "~> 0.4"},
+      {:elixir_ale, "~> 1.0"}
     ] ++ system(target)
   end
 
