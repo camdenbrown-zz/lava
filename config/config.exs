@@ -20,6 +20,16 @@ config :bootloader,
   init: [:nerves_runtime],
   app: :lava
 
+config :nerves_network, :default,
+  wlan0: [
+    ssid: "ftc",
+    psk: "fedex-conf",
+    key_mgmt: String.to_atom("WPA-PSK")
+  ],
+  eth0: [
+    ipv4_address_method: :dhcp
+  ]
+
 # Import target specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 # Uncomment to use target specific configurations

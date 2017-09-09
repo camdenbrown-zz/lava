@@ -61,7 +61,9 @@ defmodule Lava.Mixfile do
     [
       {:bootloader, "~> 0.1"},
       {:nerves_runtime, "~> 0.4"},
-      {:elixir_ale, "~> 1.0"}
+      {:elixir_ale, "~> 1.0"},
+      {:nerves_network, "~> 0.3"}
+
     ] ++ system(target)
   end
 
