@@ -1,0 +1,3 @@
+defmodule Lava do
+  
+end
